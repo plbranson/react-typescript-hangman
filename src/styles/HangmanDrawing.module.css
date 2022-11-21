@@ -1,0 +1,107 @@
+/*
+ * Copyright 2022 Patrick L. Branson
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License
+ */
+
+.hangmanHead {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 10px solid black;
+    position: absolute;
+    top: 50px;
+    right: -30px;
+}
+
+.hangmanBody {
+    width: 10px;
+    height: 100px;
+    background: black;
+    position: absolute;
+    top: 120px;
+    right: 0;
+}
+
+.hangmanLeftArm {
+    width: 100px;
+    height: 10px;
+    background: black;
+    position: absolute;
+    top: 150px;
+    right: 10px;
+    transform: rotate(30deg);
+    transform-origin: right bottom;
+}
+
+.hangmanLeftLeg {
+    width: 100px;
+    height: 10px;
+    background: black;
+    position: absolute;
+    top: 210px;
+    right: 0;
+    transform: rotate(-60deg);
+    transform-origin: right bottom;
+}
+
+.hangmanRightArm {
+    width: 100px;
+    height: 10px;
+    background: black;
+    position: absolute;
+    top: 150px;
+    right: -100px;
+    transform: rotate(-30deg);
+    transform-origin: left bottom;
+}
+
+.hangmanRightLeg {
+    width: 100px;
+    height: 10px;
+    background: black;
+    position: absolute;
+    top: 210px;
+    right: -90px;
+    transform: rotate(60deg);
+    transform-origin: left bottom;
+}
+
+.scaffoldingRightVerticalBar {
+    height: 50px;
+    width: 10px;
+    background: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.scaffoldingTopHorizontalBar {
+    height: 10px;
+    width: 200px;
+    background: black;
+    margin-left: 120px;
+}
+
+.scaffoldingLeftVerticalBar {
+    height: 400px;
+    width: 10px;
+    background: black;
+    margin-left: 120px;
+}
+
+.scaffoldingBottomHorizontalBar {
+    height: 10px;
+    width: 250px;
+    background: black;
+}
